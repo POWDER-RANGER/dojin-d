@@ -1,0 +1,16 @@
+{
+  "name": "dojin-d",
+  "version": "0.1.0-alpha",
+  "description": "Dojin D — Deterministic ECS combat simulation with rollback netcode and dojo rule engine",
+  "type": "module",
+  "scripts": {
+    "build": "tsc",
+    "dev": "vite",
+    "test": "vitest"
+  },
+  "devDependencies": {
+    "typescript": "^5.4.0",
+    "vite": "^5.0.0",
+    "vitest": "^1.0.0"
+  }
+}
