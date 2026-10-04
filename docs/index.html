@@ -1,0 +1,55 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<meta name="theme-color" content="#0a0000">
+<meta name="description" content="DOJIN D — deterministic ECS combat simulation, rollback netcode and dojo rule engine.">
+<title>DOJIN D — Combat Simulation</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Oswald:wght@500;700&family=Share+Tech+Mono&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="https://powder-ranger.github.io/assets/brand-pages.css">
+<style>
+  body{font-family:'Oswald',Impact,'Arial Narrow',sans-serif;text-transform:uppercase;letter-spacing:.045em}
+  main{width:min(1100px,100%);margin:0 auto;padding:108px 20px 64px}
+  .stripe{height:8px;background:#E31C23;margin-bottom:24px}
+  .kicker{font-family:'Share Tech Mono',monospace;color:#E31C23;font-size:.72rem;letter-spacing:.2em;margin-bottom:12px}
+  h1{font-size:clamp(3rem,10vw,6rem);line-height:.88;margin-bottom:18px;color:#F2E8E8}
+  h1 span{color:#E31C23}
+  .lead{max-width:44rem;color:#A08080;border-left:6px solid #E31C23;padding-left:16px;margin-bottom:34px;line-height:1.55}
+  .grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(230px,1fr));border-top:3px solid #E31C23;border-left:3px solid #E31C23}
+  .card{padding:22px;background:#120000;border-right:3px solid #E31C23;border-bottom:3px solid #E31C23;min-height:150px}
+  .card h2{font-size:1rem;margin-bottom:10px}
+  .card p{font-size:.88rem;color:#A08080;line-height:1.55}
+  .meta{font-family:'Share Tech Mono',monospace;color:#E31C23;font-size:.65rem;letter-spacing:.14em;display:block;margin-bottom:8px}
+  .bar{margin:40px 0 0;border:3px solid #E31C23;padding:18px;background:#1a0000;font-family:'Share Tech Mono',monospace;color:#A08080;font-size:.72rem;line-height:1.7}
+  footer{border-top:8px solid #E31C23;padding:28px 20px;text-align:center;font-family:'Share Tech Mono',monospace;color:#A08080;font-size:.68rem;letter-spacing:.12em}
+</style>
+</head>
+<body>
+<main>
+  <div class="stripe"></div>
+  <p class="kicker">// SIMULATION LAB · ALPHA</p>
+  <h1>DOJIN <span>D</span></h1>
+  <p class="lead">Deterministic ECS combat simulation. Rollback netcode. Dojo rule engine. The vertical slice is driven by fixed-timestep state, reproducible input logs and anti-cheat validation.</p>
+
+  <div class="grid">
+    <section class="card"><span class="meta">01 · CONCEPT</span><h2>World Rules</h2><p>Combat philosophy, aesthetic constraints and deterministic simulation rules.</p></section>
+    <section class="card"><span class="meta">02 · RUNTIME</span><h2>ECS Core</h2><p>Fixed-timestep simulation, event bus and component-driven runtime.</p></section>
+    <section class="card"><span class="meta">03 · NETCODE</span><h2>Rollback</h2><p>Input buffering, prediction, rewind and frame correction without desync.</p></section>
+    <section class="card"><span class="meta">04 · RENDERING</span><h2>Debug First</h2><p>Entity and hitbox visualization remains decoupled from simulation state.</p></section>
+    <section class="card"><span class="meta">05 · GOVERNANCE</span><h2>Rule Validation</h2><p>Anti-cheat checks, version enforcement and dependency-aware system placement.</p></section>
+    <section class="card"><span class="meta">06 · SERVICES</span><h2>Dojo Network</h2><p>Matchmaking, spectator APIs, dojo clubs and economy systems.</p></section>
+  </div>
+
+  <div class="bar">BUILD ORDER → ENTITY MANAGER → COMPONENT STORE → MOVEMENT → SPATIAL GRID → INPUT BUFFER → COMBAT → DEBUG RENDERER → ROLLBACK HARNESS</div>
+</main>
+<footer>
+  <a href="https://github.com/POWDER-RANGER/dojin-d">SOURCE</a> ·
+  <a href="https://powder-ranger.github.io/pages.html">LIVE PAGES</a> ·
+  <a href="https://github.com/POWDER-RANGER">POWDER-RANGER</a>
+</footer>
+<script defer src="https://powder-ranger.github.io/assets/brand-pages.js" data-repo="dojin-d"></script>
+</body>
+</html>
