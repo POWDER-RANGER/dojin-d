@@ -2,6 +2,8 @@
 
 > Deterministic ECS combat simulation · Rollback netcode · Dojo rule engine
 
+**Web:** https://powder-ranger.github.io/dojin-d/
+
 **Version:** `0.1.0-alpha`  
 **Status:** ECS scaffold instantiated — implementation phase active
 
